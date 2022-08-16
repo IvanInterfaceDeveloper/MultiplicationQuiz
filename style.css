@@ -20,6 +20,9 @@ body{
     position: relative;
     min-width: 490px;
     min-height: 400px;
+
+    /* transition: all 2s ease-out; */
+    animation: CorrectAnimation 1s ease-in;
 }
 
 .form{
@@ -222,3 +225,20 @@ https://codepen.io/mohaiman/pen/MQqMyo
     }
 
 }
+
+@keyframes CorrectAnimation {
+    0%{
+        background: linear-gradient(to right top, #65a8df, #6cdbeb);
+    }
+    50%{
+        background: linear-gradient(to right top, #65df8e, #9feb6c);
+    }
+    100%{
+        background: linear-gradient(to right top, #65a8df, #6cdbeb);
+    }
+}
+
+.correctAnimationCLASS{
+    transition: CorrectAnimation 1s ease-in;
+}
+
